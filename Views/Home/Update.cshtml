@@ -1,0 +1,31 @@
+
+@model User
+<div class="row">
+     <div class="col-6">
+        <form asp-action="Edit" asp-route-id="@Model.UserId" method="post">
+            <div>
+                <label asp-for="Name" ></label>
+                <input asp-for="Name">
+                <span asp-validation-for="Name"></span>
+            </div>
+            <div>
+                <label asp-for="Email" ></label>
+                <input asp-for="Email">
+                <span asp-validation-for="Email"></span>
+            </div>
+            <div>
+                <label asp-for="Height" ></label>
+                <input asp-for="Height">
+                <span asp-validation-for="Height"></span>
+            </div>
+            <div>
+                <label asp-for="Description" ></label>
+                <input asp-for="Description">
+                <span asp-validation-for="Description"></span>
+            </div>
+            <input type="submit">
+
+        </form>
+
+    </div>
+</div>
